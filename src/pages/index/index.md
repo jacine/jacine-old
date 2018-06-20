@@ -3,10 +3,6 @@ path: "/"
 title: ""
 ---
 
-<div class="welcome">
+## One day...
 
-## Hello!
-
-Hello!  Gotta write something.
-
-</div>
+I will write something.
