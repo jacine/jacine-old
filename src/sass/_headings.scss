@@ -1,0 +1,43 @@
+h1, h2, h3, h4, h5 {
+  font-family: $font-accent;
+  font-weight: 300;
+  line-height: 1.25;
+  margin: 0 0 $spacer 0;
+
+  @media (min-width: 600px) {
+    margin-bottom: $spacer-md;
+  }
+}
+
+h1 {
+  @include font-size(34px);
+  font-weight: 300;
+
+  @media (min-width: 600px) {
+    @include font-size(42px);
+  }
+}
+
+h2 {
+  @include font-size(28px);
+
+  @media (min-width: 600px) {
+    @include font-size(32px);
+  }
+}
+
+h3 {
+  @include font-size(22px);
+
+  @media (min-width: 600px) {
+    @include font-size(22px);
+  }
+}
+
+h4 {
+  @include font-size(18px);
+
+  @media (min-width: 600px) {
+    @include font-size(20px);
+  }
+}

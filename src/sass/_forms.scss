@@ -1,0 +1,46 @@
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  line-height: 1.4;
+}
+
+textarea,
+input:not([type=submit]):not([type=file]) {
+  border: solid 1px #ddd;
+  padding: 0.2rem;
+}
+
+label {
+  cursor: pointer;
+}
+
+.form-group {
+  margin: 1rem 0;
+  label {
+    display: block;
+  }
+  textarea, input {
+    display: block;
+    width: 100%;
+  }
+  @media (min-width: 480px) {
+    display: flex;
+    label {
+      display: inline-block;
+      flex: 1 0 20%;
+      text-align: right;
+      padding-right: 1rem;
+    }
+    textarea, input {
+      flex: 1 0 80%;
+      width: auto;
+    }
+    input[type='submit'] {
+      flex-grow: 0;
+      margin-left: auto;
+    }
+  }
+}

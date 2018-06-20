@@ -1,0 +1,34 @@
+
+// Typography
+$base-font-size: 16px;
+$font-default: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+$font-accent: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+$font-monospace: 'Operator Mono', SFMono-Regular, Consolas, 'Liberation Mono', Monaco, Menlo, Courier, monospace;
+
+// Pallette
+$color-blue: #03a9f4;
+$color-gray: #585858;
+
+// References
+$color-link: $color-blue;
+
+// Spacing
+$spacer: 0.75rem;
+$spacer-xs: $spacer * 0.5;
+$spacer-sm: $spacer;
+$spacer-md: $spacer * 2;
+$spacer-lg: $spacer * 3;
+$spacer-xl: $spacer * 4;
+
+// font-size
+// Converts px to rem units based on the `$base-font-size` variable.
+
+@mixin font-size($size: $base-font-size, $breakpoint: null) {
+  @if ($breakpoint != null) {
+    @media ($breakpoint) {
+      font-size: $size / 16px * 1rem;
+    }
+  } @else {
+    font-size: $size / 16px * 1rem;
+  }
+}

@@ -1,0 +1,47 @@
+html {
+  box-sizing: border-box;
+  &, body {
+    font-size: $base-font-size;
+  }
+}
+body {
+  font-weight: 200;
+  line-height: 1.4;
+}
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+a {
+  color: $color-link;
+}
+p, ol, ul, dl, blockquote, iframe, pre, img {
+  margin: 0 0 $spacer 0;
+  @media (min-width: 600px) {
+    margin-bottom: $spacer-md;
+  }
+}
+iframe, img {
+  max-width: 100%;
+}
+ol, ul {
+  padding-left: 2em;
+}
+li {
+  margin: 0 0 $spacer-xs 0;
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+code, kbd, samp, pre {
+  @include font-size(14px);
+  font-family: $font-monospace;
+  font-weight: 300;
+}
+blockquote {
+  color: $color-gray;
+  font-style: italic;
+  margin-left: 1rem;
+  border-left: solid 8px #777;
+  padding-left: 2rem;
+}

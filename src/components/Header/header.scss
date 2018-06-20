@@ -1,0 +1,44 @@
+.header {
+  background: #252525;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  @media (min-width: 520px) {
+    text-align: left;
+  }
+  &, a {
+    color: #fff;
+  }
+  a {
+    text-decoration: none;
+  }
+  .container {
+    @media (min-width: 520px) {
+      align-items: center;
+      display: flex;
+    }
+  }
+}
+
+.header__title {
+  flex-grow: 1;
+  padding-right: 2rem;
+  margin: 0;
+  position: relative;
+  img {
+    position: relative;
+    bottom: -5px;
+    margin: 0;
+    max-width: 50vw;
+  }
+}
+
+.nav--header {
+  font-weight: 200;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  .nav__list {
+    margin-right: auto;
+  }
+}
+
